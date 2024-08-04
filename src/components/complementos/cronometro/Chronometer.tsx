@@ -25,7 +25,7 @@ export const Chronometer: React.FC = () => {
 
   const employee = data?.employee;
   const stopwatchDate = new Date(employee.stopwatchDate);
-  console.log("STOPWATCH", stopwatchDate)
+  //console.log("STOPWATCH", stopwatchDate)
   
   // Calcular la diferencia en milisegundos
   const diffMilliseconds = currentTime.getTime() - stopwatchDate.getTime();

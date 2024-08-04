@@ -22,7 +22,7 @@ export const BoardActivity = () => {
          if (loading) return <BoardSqueleton/>;
          if (error) return <p>Error: {error.message}</p>;
        
-         const activities = data?.getCurrentActivities[0]
+         const activities = data?.getCurrentActivities[0] ?? [];
 
   return (
     <div className=" bg-white">
